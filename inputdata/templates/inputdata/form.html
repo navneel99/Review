@@ -1,0 +1,27 @@
+
+<!--
+A sign Up Page
+The page will include the form which will take user id, password name
+-->
+
+{% extends "inputdata/form2.html"%}
+
+{% block body %}
+
+<form method="post" action="/inputdata/">
+{% csrf_token %}
+
+<!--
+Enter your Name
+<input type="text"><br>
+Enter username:
+<input type="text"><br>
+Enter Password:
+<input type="password"><br>
+<br>
+<input type="submit" value="Create Account">
+-->
+{{form}}
+<input type="submit" value="Click Here!">
+</form>
+{% endblock%}
